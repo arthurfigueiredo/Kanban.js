@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+	background: #fefefe;
+	color: #34495e;
+	font-family: arial;
+	font-size: 14px;
+	line-height: 1.231;
+	text-rendering: optimizelegibility;
+	margin: 0;
+}
+
+p {
+	line-height: 1.722169;
+	margin: 0 0 10px;
+}
+
+a {
+	color: #1da9cc;
+	text-decoration: none;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+	-webkit-backface-visibility: hidden;
+}
+
+a:hover {
+	color: #1fb7d8;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ==========================================================================
+	 Layout
+	 ========================================================================== */
+
+[class*="col"] {
+	float: left;
+	min-height: 1px;
+	margin-left: 30px;
+}
+/* cols */
+.col-4 {
+	width: 30%;
+	margin-left: 2.5%;
+}
+@media (max-width: 740px) {
+	.col-4 {
+		width: 95%;
+		margin: auto;
+		float: none;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 99%;
+}
+
+#main {
+	min-height: 100%;
+  margin-bottom: -100px;
+}
+
+#main:after {
+  content: "";
+  display: block;
+}
+
+
+
+/* ==========================================================================
+	 Header
+	 ========================================================================== */
+
+header {
+	padding: 20px 0 30px;
+}
+
+header h1 {
+	color: #D04649;
+	font-family: 'Lobster Two', arial;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.1;
+	font-size: 110px;
+	margin: 0;
+	text-align: center;
+}
+
+header h2 {
+	font-family: 'Lobster Two', arial;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 4px;
+	margin-top: 9px;
+	font-size: 30px;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	header h1 {
+		font-size: 70px;
+	}
+
+	header h2 {
+		font-size: 30px;
+	}
+}
+
+/* ==========================================================================
+	 Main
+	 ========================================================================== */
+
+/* Box
+	 ========================================================================== */
+
+.box {
+	background-color: #ecf0f5;
+
+	border:7px dotted #ecf0f5;
+	border-radius: 6px;
+	padding: 14px;
+	position: relative;
+	text-align: center;
+	min-height: 600px;
+	margin-bottom: 20px;
+}
+
+.box h3 {
+	font-size: 25px;
+	margin: 0;
+}
+
+
+.box a {
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 16.996px;
+	line-height: 20px;
+	padding: 12px 18px 13px;
+	background: #1da9cc;
+	border: none;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-backface-visibility: hidden;
+	width: 100%;
+}
+
+.box a:hover {
+	background: #1fb7d8;
+}
+
+.box .post-it:before {
+	width: 69px;
+	height: 80px;
+	display: block;
+	content: " ";
+	background: url(../img/icon-espeto.png) center center no-repeat;
+	position: absolute;
+	top: -50px;
+	right: 37%;
+	-webkit-transform: rotate(17deg);
+}
+.box .post-it {
+	cursor: move;
+	position: relative;
+	width: 90%;
+	height: auto;
+	background: -moz-linear-gradient(-45deg,  rgba(255,247,79,1) 0%, rgba(255,251,160,0.86) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,247,79,1)), color-stop(100%,rgba(255,251,160,0.86))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,247,79,1) 0%,rgba(255,251,160,0.86) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,247,79,1) 0%,rgba(255,251,160,0.86) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,247,79,1) 0%,rgba(255,251,160,0.86) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(255,247,79,1) 0%,rgba(255,251,160,0.86) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff74f', endColorstr='#dbfffba0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	box-shadow: 29px 23px 33px -22px #666;
+	transform: rotate(-4deg);
+	-webkit-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	margin: 31px 16px 50px 16px;
+	padding-bottom: 20px;
+	min-height: 120px;
+	font-size: 30px;
+	padding-top: 30px;
+	font-family: 'Lobster Two';
+}
+.post-it p {
+	outline: none;
+	font-weight: normal;
+}
+.post-it p:hover {
+	cursor: text;
+}
+.drop-here {
+	border:7px dotted #ccc;
+	opacity: 0.8;
+}
+/* ==========================================================================
+	 Footer
+	 ========================================================================== */
+
+footer {
+	display: block;
+	clear: both;
+	background: #ebedef;
+	color: #b8bfc7;
+	width: 100%;
+}
+
+footer p {
+	font-size: 18.004px;
+	padding: 40px 0 0;
+}
+
+.credits {
+	float: left;
+}
+
