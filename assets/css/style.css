@@ -222,7 +222,7 @@ header h2 {
 footer {
 	display: block;
 	clear: both;
-	background: #ebedef;
+	text-align: center;
 	color: #b8bfc7;
 	width: 100%;
 }
@@ -231,8 +231,3 @@ footer p {
 	font-size: 18.004px;
 	padding: 40px 0 0;
 }
-
-.credits {
-	float: left;
-}
-
