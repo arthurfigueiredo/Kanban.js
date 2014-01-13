@@ -193,11 +193,11 @@ header h2 {
 	background: linear-gradient(135deg,  rgba(255,247,79,1) 0%,rgba(255,251,160,0.86) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff74f', endColorstr='#dbfffba0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	box-shadow: 29px 23px 33px -22px #666;
-	transform: rotate(-4deg);
+	transform: rotate(-4deg) translate3d( 0, 0, 0);
 	-webkit-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	-moz-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	-ms-transform: rotate(-4deg) translate3d( 0, 0, 0);
 	-webkit-backface-visibility: hidden;
-	transform: rotate(-4deg);
-	transform: rotate(-4deg);
 	margin: 31px 16px 50px 16px;
 	padding-bottom: 20px;
 	min-height: 120px;
