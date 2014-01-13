@@ -194,7 +194,8 @@ header h2 {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff74f', endColorstr='#dbfffba0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	box-shadow: 29px 23px 33px -22px #666;
 	transform: rotate(-4deg);
-	-webkit-transform: rotate(-4deg);
+	-webkit-transform: rotate(-4deg) translate3d( 0, 0, 0);
+	-webkit-backface-visibility: hidden;
 	transform: rotate(-4deg);
 	transform: rotate(-4deg);
 	margin: 31px 16px 50px 16px;
