@@ -133,6 +133,15 @@ header .fork-me {
 	 ========================================================================== */
 .operations {
 }
+.create-new {
+	cursor: pointer;
+	float: right;
+	opacity: 0.6;
+	transition: opacity 0.2s;
+}
+.create-new:hover {
+	opacity: 9;
+}
 .trash {
 	margin-bottom: 10px;
 	float: right;
