@@ -2,7 +2,6 @@ $(function(){
     
     var saveApplication = function(){
         localStorage.setItem('app', $(".main-content").html());
-        console.log($(".main-content").html());
     }
     var getApplication = function(){
         return localStorage.getItem('app'); 
