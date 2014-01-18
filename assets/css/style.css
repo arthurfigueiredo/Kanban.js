@@ -52,6 +52,9 @@ img {
 	width: 30%;
 	margin-left: 2.5%;
 }
+.col-12 {
+	width: 95%;
+}
 @media (max-width: 740px) {
 	.col-4 {
 		width: 95%;
@@ -120,6 +123,24 @@ header h2 {
 /* ==========================================================================
 	 Main
 	 ========================================================================== */
+
+/* Operations
+	 ========================================================================== */
+.operations {
+}
+.trash {
+	margin-bottom: 10px;
+	float: right;
+	opacity: 0.2;
+	padding: 6px;
+	border:7px solid #fff;
+	transition: all 0.1s ease-out;
+}
+.trash.active {
+	padding-left: 300px;
+	opacity: 1;
+	border:7px dotted #ecf0f5;
+}
 
 /* Box
 	 ========================================================================== */
