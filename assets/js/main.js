@@ -38,13 +38,16 @@ $(function(){
 
     newNote.click(function(){
         var toDo = prompt("What you have to do?");
-        var note = $('<div id="card-'+(boxs.length+1)+'" class="post-it" draggable="true"><p title="Click to edit" contenteditable="true">'+toDo+'</p></div>');
-        boxs.push(note);
 
-        note.on('dragstart', noteDragStart);
-        note.on('dragend', noteDragEnd);
+        if(toDo){
+            var note = $('<div id="card-'+(boxs.length+1)+'" class="post-it" draggable="true"><p title="Click to edit" contenteditable="true">'+toDo+'</p></div>');
+            boxs.push(note);
 
-        boxs.first().append(note);
+            note.on('dragstart', noteDragStart);
+            note.on('dragend', noteDragEnd);
+
+            boxs.first().append(note);
+        }
     });
 
     function noteDragStart(e) {
