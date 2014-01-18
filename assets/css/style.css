@@ -109,6 +109,11 @@ header h2 {
 	font-size: 30px;
 	text-align: center;
 }
+header .fork-me {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 
 @media (max-width: 767px) {
 	header h1 {
