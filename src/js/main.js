@@ -51,8 +51,8 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
         });
         trash.click(function(){
             if(confirm("Want to clear?")){
-                localStorage.setItem("app",'<div class="col-12"><div class="operations"><div class="create-new"><img src="https://cdn1.iconfinder.com/data/icons/Mobile-Icons/128/07_note.png" alt="Create new" width="85" title="Create new note"></div><div class="trash" style="opacity: 0.2;"><img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-128.png" alt="Trash" width="60"></div></div></div><div class="col-4"><div class="box"><h3>To Do</h3></div></div><div class="col-4"><div class="box"><h3>In Progress</h3></div></div><div class="col-4"><div class="box"><h3>Done</h3></div></div>');            
-                $(".main-content").html(getApplication());
+                localStorage.clear();
+                $(".post-it").remove();
             }
         });
         newNote.click(function(){
@@ -65,7 +65,7 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
                 note.on('dragstart', noteDragStart);
                 note.on('dragend', noteDragEnd);
 
-                boxs.first().append(note);
+                boxs.first().prepend(note);
                 saveApplication();
             }
         });
