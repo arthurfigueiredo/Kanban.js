@@ -4,9 +4,9 @@ To Do Experiment
 To do application, made using DnD and localStorage HTML5 API. 
 
 ## To Do
-* Use Modernizr;
 * Create Gruntfile;
 * Refactor JS files;
+* Create "Track tutorial";
 * Create Unit tests;
 
 ## Browser Support
