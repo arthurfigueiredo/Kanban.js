@@ -1,4 +1,4 @@
-if (Modernizr.localstorage && !Modernizr.draganddrop) {
+if (Modernizr.localstorage && Modernizr.draganddrop) {
     $(function(){
         
         var saveApplication = function(){
