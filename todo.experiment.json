@@ -1,0 +1,36 @@
+{
+	"name": "todo",
+	"title": "To Do Experiment",
+	"description": "Simple and fast task manager.",
+	"keywords": [
+		"dnd",
+		"localstorage",
+		"jquery"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Arthur Figueiredo",
+		"email": "arthurfn.webdev@gmail.com",
+		"url": "https://github.com/arthurfigueiredo"
+	},
+	"maintainers": [
+		{
+			"name": "Arthur Figueiredo",
+			"email": "arthurfn.webdev@gmail.com",
+			"url": "https://github.com/arthurfigueiredo"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://arthurfigueiredo.mit-license.org/"
+		}
+	],
+	"bugs": "https://github.com/arthurfigueiredo/ToDoExperiment/issues",
+	"homepage": "http://arthurfigueiredo.github.io/ToDoExperiment/",
+	"docs": "https://github.com/arthurfigueiredo/ToDoExperiment#readme",
+	"download": "https://github.com/arthurfigueiredo/ToDoExperiment/archive/gh-pages.zip",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}
