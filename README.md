@@ -4,7 +4,6 @@ To Do Experiment
 To do application, made using DnD and localStorage HTML5 API. 
 
 ## To Do
-* Create Gruntfile;
 * Refactor JS files;
 * Create "Track tutorial";
 * Create Unit tests;
