@@ -1,5 +1,13 @@
 if (Modernizr.localstorage && Modernizr.draganddrop) {
     $(function(){
+        "use strict";
+
+        var saveApplication = function(){
+            localStorage.setItem("app", $(".main-content").html());
+        },
+        getApplication = function(){
+            return localStorage.getItem("app");
+        };
 
         (function(){
             if(getApplication()){
@@ -7,14 +15,8 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
             }
         })();
 
-        var saveApplication = function(){
-            localStorage.setItem("app", $(".main-content").html());
-        },
-        getApplication = function(){
-            return localStorage.getItem("app");
-        },
 
-        boxs    = $(".box"),
+    var boxs    = $(".box"),
         trash   = $(".trash"),
         note    = $(".post-it"),
         newNote = $(".create-new");

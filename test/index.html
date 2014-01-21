@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ToDo Experiment Test Suite</title>
+
+	<!-- jquery -->
+	<script src="../src/js/jquery-2.0.3.min.js"></script>
+
+    <!-- modernizr -->
+	<script src="../src/js/modernizr.js"></script>
+
+	
+
+	<!-- qunit -->
+	<link rel="stylesheet" href="qUnit/qunit.css" media="screen">
+	<script src="qUnit/qunit.js"></script>
+	<script>
+		// See https://github.com/axemclion/grunt-saucelabs#test-result-details-with-qunit
+		QUnit.done(function(results) {
+			window.global_test_results = results
+		})
+	</script>
+
+	<!-- js sources -->
+	<script src="../src/js/main.js"></script>
+
+	<!-- unit tests -->
+	<script src="unit/example.js"></script>
+
+</head>
+<body>
+	<div>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+	</div>
+</body>
+</html>
