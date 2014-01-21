@@ -1,47 +1,47 @@
 if (Modernizr.localstorage && Modernizr.draganddrop) {
     $(function(){
-        
-        var saveApplication = function(){
-            localStorage.setItem('app', $(".main-content").html());
-        }
-        var getApplication = function(){
-            return localStorage.getItem('app'); 
-        }
 
-        var runApplication = (function(reboot){
+        (function(){
             if(getApplication()){
                 $(".main-content").html(getApplication());
             }
         })();
 
-        var boxs = $(".box");
-        var trash = $(".trash");
-        var note = $('.post-it');
-        var newNote = $(".create-new");
+        var saveApplication = function(){
+            localStorage.setItem("app", $(".main-content").html());
+        },
+        getApplication = function(){
+            return localStorage.getItem("app");
+        },
 
-        note.on('dragstart', noteDragStart);
-        note.on('dragend', noteDragEnd);
+        boxs    = $(".box"),
+        trash   = $(".trash"),
+        note    = $(".post-it"),
+        newNote = $(".create-new");
 
-        boxs.on('dragover', function(e) {
-                $(this).addClass("drop-here");   
+        note.on("dragstart", noteDragStart);
+        note.on("dragend", noteDragEnd);
+
+        boxs.on("dragover", function(e) {
+                $(this).addClass("drop-here");
                 e.preventDefault();
         });
-        boxs.on('dragleave',function(){
+        boxs.on("dragleave",function(){
             $(this).removeClass("drop-here");
         });
-        trash.on('dragover', function(e) {
+        trash.on("dragover", function(e) {
             e.preventDefault();
             trash.addClass("active");
         });
 
 
-        boxs.on('drop', function(e) {
+        boxs.on("drop", function(e) {
                 var card = e.originalEvent.dataTransfer.getData("text/plain");
                 e.target.appendChild(document.getElementById(card));
                 e.preventDefault();
         });
 
-        trash.on('drop', function(e) {
+        trash.on("drop", function(e) {
                 var card = e.originalEvent.dataTransfer.getData("text/plain");
                 if(confirm("Want to delete this note?")){
                     $("#"+card).remove();
@@ -57,13 +57,13 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
         });
         newNote.click(function(){
             var toDo = prompt("What you have to do?");
-
+                note;
             if(toDo){
-                var note = $('<div id="card-'+(boxs.length+1)+'" class="post-it" draggable="true"><p title="Click to edit" contenteditable="true">'+toDo+'</p></div>');
+                note = $("<div id=\"card-"+(boxs.length+1)+"\" class=\"post-it\" draggable=\"true\"><p title=\"Click to edit\" contenteditable=\"true\">"+toDo+"</p></div>");
                 boxs.push(note);
 
-                note.on('dragstart', noteDragStart);
-                note.on('dragend', noteDragEnd);
+                note.on("dragstart", noteDragStart);
+                note.on("dragend", noteDragEnd);
 
                 boxs.first().prepend(note);
                 saveApplication();
@@ -71,13 +71,13 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
         });
 
         function noteDragStart(e) {
-            e.originalEvent.dataTransfer.setData("text/plain", e.target.getAttribute('id'));
+            e.originalEvent.dataTransfer.setData("text/plain", e.target.getAttribute("id"));
             trash.css({
                 opacity : 0.5
             });
         }
 
-        function noteDragEnd(e){
+        function noteDragEnd(){
             boxs.removeClass("drop-here");
             trash.css({
                 opacity : 0.2
@@ -91,5 +91,5 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
 
     });
 } else {
-    $(".main-content").html(null).append('<p class="no-suport">You need to update your browser to use this application :)</p>');
+    $(".main-content").html(null).append("<p class=\"no-suport\">You need to update your browser to use this application :)</p>");
 }
