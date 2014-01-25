@@ -143,6 +143,7 @@ header .fork-me {
 	opacity: 9;
 }
 .trash {
+	cursor: pointer;
 	margin-bottom: 10px;
 	float: right;
 	opacity: 0.2;
