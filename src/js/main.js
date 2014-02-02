@@ -58,16 +58,18 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
             }
         });
         newNote.click(function(){
-            var toDo = prompt("What you have to do?");
-                note;
+            var toDo = prompt("What you have to do?"),
+                thisNote;
             if(toDo){
-                note = $("<div id=\"card-"+(boxs.length+1)+"\" class=\"post-it\" draggable=\"true\"><p title=\"Click to edit\" contenteditable=\"true\">"+toDo+"</p></div>");
-                boxs.push(note);
+                // VERIFICAR SE JA EXISTE
+                thisNote = $("<div id=\"card-"+(note.length+1)+"\" class=\"post-it\" draggable=\"true\"><p title=\"Click to edit\" contenteditable=\"true\">"+toDo+"</p></div>");
+                note.push(thisNote);
 
-                note.on("dragstart", noteDragStart);
-                note.on("dragend", noteDragEnd);
+                thisNote.on("dragstart", noteDragStart);
+                thisNote.on("dragend", noteDragEnd);
+                thisNote.on("keyup", noteChange);
 
-                boxs.first().prepend(note);
+                boxs.first().prepend(thisNote);
                 saveApplication();
             }
         });
@@ -85,6 +87,9 @@ if (Modernizr.localstorage && Modernizr.draganddrop) {
                 opacity : 0.2
             });
             trash.removeClass("active");
+            saveApplication();
+        }
+        function noteChange(){
             saveApplication();
         }
         $(".post-it").on("keyup",function(){
