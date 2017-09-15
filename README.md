@@ -1,12 +1,7 @@
 Awesome Todo
 ==========================
 
-To do application, made using DnD and localStorage HTML5 API. 
-
-## To Do
-* Refactor JS files;
-* Create "Track tutorial";
-* Create Unit tests;
+To do application, made using DnD API and localStorage HTML5 API. 
 
 ## Browser Support
 
