@@ -1,4 +1,4 @@
-To Do Experiment
+Awesome Todo
 ==========================
 
 To do application, made using DnD and localStorage HTML5 API. 
