@@ -1,7 +1,10 @@
-Awesome Todo
+Kanban.js
 ==========================
 
 To do application, made using DnD API and localStorage HTML5 API. 
+
+## Live Demo
+[DEMO](http://arthurfigueiredo.github.io/Kanban.js/)
 
 ## Browser Support
 
