@@ -1,7 +1,11 @@
 Kanban.js
 ==========================
 
-Kanban board, made using Drag & drop and localStorage. 
+> Kanban board, made using Drag & drop and localStorage. 
+
+<a href="http://arthurfigueiredo.github.io/Kanban.js/"><img width="728" src="https://user-images.githubusercontent.com/3310314/59707808-c923ad00-91d9-11e9-8155-3835dd178f8e.png" alt="Demo"></a>
+
+
 
 ## Live Demo
 [DEMO](http://arthurfigueiredo.github.io/Kanban.js/)
