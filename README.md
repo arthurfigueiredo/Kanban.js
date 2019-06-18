@@ -3,7 +3,7 @@ Kanban.js
 
 > Kanban board, made using Drag & drop and localStorage. 
 
-<a href="http://arthurfigueiredo.github.io/Kanban.js/"><img width="728" src="https://user-images.githubusercontent.com/3310314/59707808-c923ad00-91d9-11e9-8155-3835dd178f8e.png" alt="Demo"></a>
+<a href="http://arthurfigueiredo.github.io/Kanban.js/"><img width="728" src="https://user-images.githubusercontent.com/3310314/59708137-87473680-91da-11e9-9ec9-561c24d1b2f5.png" alt="Demo"></a>
 
 
 
