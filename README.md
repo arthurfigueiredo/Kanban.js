@@ -1,7 +1,7 @@
 Kanban.js
 ==========================
 
-To do application, made using DnD API and localStorage HTML5 API. 
+Kanban board, made using Drag & drop and localStorage. 
 
 ## Live Demo
 [DEMO](http://arthurfigueiredo.github.io/Kanban.js/)
