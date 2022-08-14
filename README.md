@@ -1,7 +1,7 @@
 Kanban.js
 ==========================
 
-> Javascript plugin to build kanban boards without dependencies.
+> Javascript plugin to build kanban boards only 2KB
 
 <a href="http://arthurfigueiredo.github.io/Kanban.js/"><img width="728" src="https://user-images.githubusercontent.com/3310314/59708137-87473680-91da-11e9-9ec9-561c24d1b2f5.png" alt="Demo"></a>
 
