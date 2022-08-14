@@ -1,7 +1,7 @@
 {
-	"name": "todoexperiment",
-	"title": "To Do Experiment",
-	"description": "Simple and fast task manager.",
+	"name": "kanbanjs",
+	"title": "KanbanJS",
+	"description": "Vanilla Javascript plugin to build kanban boards",
 	"author": "Arthur Figueiredo",
 	"repository": {
 		"type" : "git",
