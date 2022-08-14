@@ -1,8 +1,10 @@
 {
-	"name": "todo",
-	"title": "To Do Experiment",
-	"description": "Simple and fast task manager.",
+	"name": "KanbanJS",
+	"title": "KanbanJS",
+	"description": "Vanilla Javascript plugin to build kanban boards",
 	"keywords": [
+		"vanilla",
+		"kanban",
 		"dnd",
 		"localstorage",
 		"jquery"
@@ -26,10 +28,10 @@
 			"url": "http://arthurfigueiredo.mit-license.org/"
 		}
 	],
-	"bugs": "https://github.com/arthurfigueiredo/ToDoExperiment/issues",
-	"homepage": "http://arthurfigueiredo.github.io/ToDoExperiment/",
-	"docs": "https://github.com/arthurfigueiredo/ToDoExperiment#readme",
-	"download": "https://github.com/arthurfigueiredo/ToDoExperiment/archive/gh-pages.zip",
+	"bugs": "https://github.com/arthurfigueiredo/Kanban.js/issues",
+	"homepage": "http://arthurfigueiredo.github.io/Kanban.js/",
+	"docs": "https://github.com/arthurfigueiredo/Kanban.js#readme",
+	"download": "https://github.com/arthurfigueiredo/Kanban.js/archive/gh-pages.zip",
 	"dependencies": {
 		"jquery": ">=1.4"
 	}
