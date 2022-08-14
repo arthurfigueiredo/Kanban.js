@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 
 		// Import package manifest
-		pkg: grunt.file.readJSON("todo.experiment.json"),
+		pkg: grunt.file.readJSON("kanban.js.json"),
 
 		// Banner definitions
 		meta: {
