@@ -95,33 +95,14 @@ header h1 {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 1.1;
-	font-size: 110px;
+	font-size: 40px;
 	margin: 0;
 	text-align: center;
-}
-
-header h2 {
-	font-family: 'Lobster Two', arial;
-	font-style: normal;
-	font-weight: 400;
-	margin-bottom: 4px;
-	margin-top: 9px;
-	font-size: 30px;
-	text-align: center;
-}
-header .fork-me {
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 
 @media (max-width: 767px) {
 	header h1 {
 		font-size: 70px;
-	}
-
-	header h2 {
-		font-size: 30px;
 	}
 }
 
